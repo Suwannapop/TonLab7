@@ -37,6 +37,7 @@ int main(){
 	string world;
 	cin  >> world;
 	cout <<"Reversed text: "<< func1(world) << endl ;
+	
 	if (func2(world) == func2(func1(world)))
 	{
 		cout << "Palindrome: Yes";
