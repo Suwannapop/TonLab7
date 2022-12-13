@@ -1,11 +1,10 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
 
 string func1(string x){
 	int i = 0, L = x.size();
-	string y = "";
+	string y ;
 	while(i < L){
 		y += x[L-i-1];
 		i++;
@@ -34,8 +33,16 @@ string func3(string x){
 }
 
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+    cout << "Input text: ";
+	string world;
+	cin  >> world;
+	cout <<"Reversed text: "<< func1(world) << endl ;
+	if (func2(world) == func2(func1(world)))
+	{
+		cout << "Palindrome: Yes";
+	}else {
+		cout << "Palindrome: No";
+	}
+
     return 0;
 }
